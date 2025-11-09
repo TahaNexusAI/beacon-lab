@@ -1,3 +1,25 @@
+<p align="center">
+  <img src="capture_wireshark.png" alt="Capture du trafic HTTP avec Wireshark" width="750"/>
+</p>
+
+<h1 align="center">🧠 Laboratoire Beacon</h1>
+<p align="center">
+Mini-laboratoire éducatif : analyse du trafic HTTP local avec <b>Python</b> et <b>Wireshark</b>.
+</p>
+
+---
+
+### 📚 Table des matières
+1. [Description](#-description)
+2. [Composants](#-composants)
+3. [Installation](#-installation)
+4. [Utilisation](#-utilisation)
+5. [Exemple de capture Wireshark](#-exemple-de-capture-wireshark)
+6. [Licence](#-licence)
+
+---
+
+
 # 🛰️ Beacon Lab  
 
 [![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)](https://www.python.org/)
