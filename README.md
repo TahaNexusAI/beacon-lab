@@ -35,3 +35,5 @@ python server_ping.py
 
 # Dans un autre terminal, lancer le client
 python beacon_http.py
+## 📸 Capture Wireshark
+![Capture Wireshark](wireshark_capture.png)
