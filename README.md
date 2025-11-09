@@ -10,15 +10,14 @@ Mini-laboratoire éducatif : analyse du trafic HTTP local avec <b>Python</b> et 
 ---
 
 ### 📚 Table des matières
-1. [Description](#-description)
-2. [Composants](#-composants)
-3. [Installation](#-installation)
-4. [Utilisation](#-utilisation)
-5. [Exemple de capture Wireshark](#-exemple-de-capture-wireshark)
-6. [Licence](#-licence)
+- [Description](#-mini-laboratoire-éducatif)
+- [Composants](#-composants)
+- [Installation](#️-installation)
+- [Utilisation](#-utilisation)
+- [Exemple de capture Wireshark](#-capture-wireshark)
+- [Licence](#-licence)
 
 ---
-
 
 # 🛰️ Beacon Lab  
 
@@ -33,7 +32,7 @@ Mini-laboratoire éducatif : analyse du trafic HTTP local avec <b>Python</b> et 
 **Analyse du trafic HTTP local avec Python et Wireshark**
 
 Ce projet démontre la communication entre un client Python et un petit serveur HTTP local.  
-Il permet de visualiser les requêtes dans **Wireshark** pour comprendre le protocole **HTTP** en action.
+Il permet de visualiser les requêtes dans **Wireshark** afin de comprendre le protocole **HTTP** en action.
 
 ---
 
@@ -57,5 +56,4 @@ python server_ping.py
 
 # Dans un autre terminal, lancer le client
 python beacon_http.py
-## 📸 Capture Wireshark
-![Capture Wireshark](wireshark_capture.png)
+
