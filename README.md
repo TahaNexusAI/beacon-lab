@@ -65,7 +65,7 @@ Capture et analyse du trafic réseau
 
 ## ⚙️ Installation
 
-"```bash
+```bash
 # Cloner le dépôt
 git clone https://github.com/TahaNexusAI/beacon-lab.git
 cd beacon-lab
@@ -75,74 +75,56 @@ python server_ping.py
 
 # Dans un autre terminal, lancer le client
 python beacon_http.py
- .
+```
 
-▶️ Utilisation
+## ▶️ Utilisation
 
-1.Démarrer le serveur
+1. Démarrer le serveur  
+2. Démarrer le client (envoi d’une requête toutes les X secondes)  
+3. Ouvrir **Wireshark**  
+4. Sélectionner l’interface *loopback*  
+5. Appliquer un filtre :
 
-2.Démarrer le client (envoi d’une requête toutes les X secondes)
-
-3.Ouvrir Wireshark
-
-4.Sélectionner l’interface loopback
-
-5.Appliquer un filtre :
-
+```text
 http || tcp.port == 8000
+```
 
+6. Observer :
+- `GET /ping`  
+- réponses `200 OK`  
+- timestamps réguliers → **beaconing**  
+- handshake TCP  
 
-6.Observer :
-
-.GET /ping
-
-.réponses 200 OK
-
-.timestamps réguliers → beaconing
-
-.handshake TCP
-
-🔍 Analyse Wireshark
+## 🔍 Analyse Wireshark
 
 Le fichier PCAP fourni montre :
 
-les requêtes envoyées par le client (SYN → GET)
-
-les réponses du serveur
-
-la répétition cyclique (intervalle fixe)
-
-les champs HTTP utilisés
-
-la taille et le contenu des paquets
+- les requêtes envoyées par le client (SYN → GET)
+- les réponses du serveur
+- la répétition cyclique (intervalle fixe)
+- les champs HTTP utilisés
+- la taille et le contenu des paquets
 
 Ce comportement est typique :
 
-des malwares C2 beacons,
+- des malwares C2 beacons
+- des agents d’inventaire automatique
+- des sondes réseau
 
-des agents d’inventaire automatique,
-
-des sondes réseau.
-
-🎯 Objectifs pédagogiques
+## 🎯 Objectifs pédagogiques
 
 Ce laboratoire permet de :
 
-comprendre le modèle client–serveur
+- comprendre le modèle client–serveur
+- analyser un trafic HTTP réel
+- identifier des communications régulières (beaconing)
+- utiliser correctement les filtres Wireshark
+- reconnaître les étapes du handshake TCP
+- comprendre comment un SOC détecte ce type de trafic
+- poser les bases pour des projets plus avancés (C2, détection, automatisation)
 
-analyser un trafic HTTP réel
+## 📝 Licence
 
-identifier des communications régulières (beaconing)
+Projet éducatif créé par **Taha Remadna — Montréal, Canada**.
 
-utiliser correctement les filtres Wireshark
-
-reconnaître les étapes du handshake TCP
-
-comprendre comment un SOC détecte ce type de trafic
-
-poser les bases pour des projets plus avancés (C2, détection, automatisation)
-
-📝 Licence
-
-Projet éducatif créé par Taha Remadna — Montréal, Canada.
 
