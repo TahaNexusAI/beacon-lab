@@ -65,7 +65,7 @@ Capture et analyse du trafic réseau
 
 ## ⚙️ Installation
 
-```bash
+"```bash
 # Cloner le dépôt
 git clone https://github.com/TahaNexusAI/beacon-lab.git
 cd beacon-lab
@@ -75,7 +75,7 @@ python server_ping.py
 
 # Dans un autre terminal, lancer le client
 python beacon_http.py
- 
+ .
 
 ▶️ Utilisation
 
@@ -145,6 +145,4 @@ poser les bases pour des projets plus avancés (C2, détection, automatisation)
 📝 Licence
 
 Projet éducatif créé par Taha Remadna — Montréal, Canada.
-
-
 
